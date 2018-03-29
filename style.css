@@ -1,110 +1,126 @@
 .main{
 width:100%;
-background-color: #999;
-display: flex;
-flex-direction: row;
+background-color:lavender;
+display:flex;
+flex-wrap: wrap;
 }
-.left{
-  width: 30%;
-  background-color: lightblue;
-  border: 5px 4px 5px 4px #fff;
-  /* background-image: url(); */
-  margin: 10px;
-  border: 3px solid silver;
+.left
+{
+  text-align: justify;
+padding-left: 10px;
+
+border-style: solid;
+border-radius: 20px;
+background-color: orange;
+padding: 3px;
+flex-wrap: wrap;
 }
-.right{
-  width: 70%;
-  background-color: pink;
-  border: 5px 4px 5px 4px #fff;
-  margin: 10px;
-  border: 3px solid silver;
-   padding: 3px;
+.right
+{
+border:5px 5px 5px 5px #fff;
+width:70%;
+  text-align: justify;
+  flex: 2;
+background-color:cyan;
+border-style: solid;
+border-radius: 20px;
+margin-left: 10px;
+flex-wrap: wrap;
+padding: 3px;
 }
 #name{
-  color: green;
+color: blue;
 }
-.left img{
-  border-radius: 50px;
-  border: 5px solid silver;
-}
-@media only screen and (min-width:1024px) and (max-width:1280px)
- {
-  .main{
-    display: flex;
-    flex-wrap: wrap;
-        width: 100%;
-  }
-  .left{
-    width: 30%;
-    background-color: lavender;
-  }
-  .right{
-    width: 70%;
-    background-color: yellow;
-  }
-
-}
-@media only screen and (min-width:768px) and (max-width:1024px)
+.left img
 {
-  .main
-  {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  border-radius: 100px;
+border:5px solid #c454;
+}
+}
+@media all and (min-width:1024px) and (max-width:1280px)
+{
+.main
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   }
   .left
   {
-    width: 30%;
-    background-color: orange;
+    flex:1;
+    margin:3px;
+    background-color: #985;
   }
   .right
   {
-    width: 70%;
-    background-color: red;
+    flex:1;
+    margin:3px;
+    background-color: #5436;
   }
-  }
-
-
 }
-
-   @media only screen and (min-width:480px) and (max-width:768px)
-    {
-    .main
-    {
-      display: flex;
-      flex-wrap: wrap;
-
-      width: 100%;
+@media all and (min-width:768px) and (max-width:1024px)
+{
+.main
+  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     }
     .left
     {
       width: 30%;
-      background-color: blue;
+      background-color: #985;
     }
     .right
     {
       width: 70%;
-      background-color: yellow;
+      background-color: #5436;
     }
 }
-
-
-    @media only screen and (max-width:480px)
+@media all and (min-width:480px) and (max-width:768px)
+{
+  .main
+  {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    }
+    .left
     {
-      .main
-      {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-      }
-      .left
-      {
-        width: 30%;
-        background-color: gray;
-      }
-      .right
-      {
-        width: 70%;
-        background-color: lavender;
-      }
+      width: 100%;
+      background-color: #1234;
+    }
+    .right
+    {
+      width: 100%;
+      background-color: #0876;
+    }
 }
+@media all and (max-width:480px)
+{
+  main
+  {
+    flex-direcion: column;
+    display: flex;
+    width: 100%;
+    }
+    .left
+    {
+      width: 100%;
+      background-color: yellow;
+    }
+    .right
+    {
+      width: 100%;
+      background-color: green;
+    }
+.table{
+  border-radius:5px;
+  border-color: black;
+  border-style: solid;
+  background-color: #564a;
+  border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+
+  }

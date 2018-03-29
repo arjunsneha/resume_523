@@ -1,8 +1,35 @@
 {
-  "left":{
+  "basics":{
     "photo":"profile.jpg",
     "name":"D.Sushrutha Krishna",
     "email":"honeyshrutha28@gmail.com",
     "phone":"9440396755"
+  },
+  "education":[{
+"course":"Btech(ComputerScienceandEngineering)",
+"college":["RCEW","2015-2019","80%"]
+},
+{
+"course":"inter(mpc)",
+"college":["GPCET","2013-2015","76%"]
+},
+{
+"course":"ssc",
+"college":["narayana","2012-2013","85%"]
+}
+],
+"skills":[{
+  "name":"operating systems",
+  "value":"windows,linux"
+},
+  {
+    "name":"programing languages",
+    "value":"c,c++,java"
+  },
+  {
+    "name":"web developments",
+    "value":"html,json"
   }
+
+]
 }
